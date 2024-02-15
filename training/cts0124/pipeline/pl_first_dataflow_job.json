@@ -1,9 +1,9 @@
 {
-	"name": "first_dataflow_job",
+	"name": "pl_first_dataflow_job",
 	"properties": {
 		"activities": [
 			{
-				"name": "my_first_dataflow",
+				"name": "pl_my_first_dataflow",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {

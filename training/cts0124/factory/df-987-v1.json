@@ -1,0 +1,9 @@
+{
+	"name": "df-987-v1",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6c5d1b6d-41ea-42d2-9b1a-80d206fcfc15",
+		"tenantId": "a196b8f9-5d27-489e-9107-c3a43d880930"
+	}
+}

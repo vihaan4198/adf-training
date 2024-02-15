@@ -1,0 +1,24 @@
+{
+	"name": "DestinationDataset_sr1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobTgtNew",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "tgt_skills_data.csv",
+				"folderPath": "csv",
+				"container": "tgtdatafiles"
+			},
+			"compression": {
+				"type": "GZip",
+				"level": "Optimal"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,20 @@
+{
+	"name": "Parquet1083",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1083new",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "databricks"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

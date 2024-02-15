@@ -1,0 +1,52 @@
+{
+	"name": "DelimitedText1105",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1087",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "learningdatabricks1087"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SkillID",
+				"type": "String"
+			},
+			{
+				"name": "SkillName",
+				"type": "String"
+			},
+			{
+				"name": "LevelOutOfFive",
+				"type": "String"
+			},
+			{
+				"name": "KnowingSince",
+				"type": "String"
+			},
+			{
+				"name": "ModeOfLearning",
+				"type": "String"
+			},
+			{
+				"name": "DidWorkOnProject",
+				"type": "String"
+			},
+			{
+				"name": "SinceLastUsedMonth",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

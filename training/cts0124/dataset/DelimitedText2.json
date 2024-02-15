@@ -1,0 +1,52 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1082",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "tgtdatafiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SkillID",
+				"type": "String"
+			},
+			{
+				"name": "SkillName",
+				"type": "String"
+			},
+			{
+				"name": "LevelOutOfFive",
+				"type": "String"
+			},
+			{
+				"name": "KnowingSince",
+				"type": "String"
+			},
+			{
+				"name": "ModeOfLearning",
+				"type": "String"
+			},
+			{
+				"name": "DidWorkOnProject",
+				"type": "String"
+			},
+			{
+				"name": "SinceLastUsedMonth",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

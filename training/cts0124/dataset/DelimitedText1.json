@@ -1,0 +1,54 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1081",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "skills_data_vikash.csv",
+				"folderPath": "dummy",
+				"container": "databricks"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SkillID",
+				"type": "String"
+			},
+			{
+				"name": "SkillName",
+				"type": "String"
+			},
+			{
+				"name": "LevelOutOfFive",
+				"type": "String"
+			},
+			{
+				"name": "KnowingSince",
+				"type": "String"
+			},
+			{
+				"name": "ModeOfLearning",
+				"type": "String"
+			},
+			{
+				"name": "DidWorkOnProject",
+				"type": "String"
+			},
+			{
+				"name": "SinceLastUsedMonth",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

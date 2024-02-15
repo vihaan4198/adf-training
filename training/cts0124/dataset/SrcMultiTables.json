@@ -1,0 +1,13 @@
+{
+	"name": "SrcMultiTables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseSrc",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
